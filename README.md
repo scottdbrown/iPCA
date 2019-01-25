@@ -14,7 +14,7 @@ Scott Brown; sbrown@bcgsc.ca
 
 1. **Prepare peptide-MHC binding predictions.**
 
-   **Script:** [prepPeptideBindingPredictions_final_genomicCoord.py](prepPeptideBindingPredictions_final_genomicCoord.py)
+   **Script:** [prepPeptideBindingPredictions_final_genomicCoord.py](scripts/prepPeptideBindingPredictions_final_genomicCoord.py)
 
    **Input:** OptiType calls, list of whitelisted samples, maf file, proteome reference.
 
@@ -38,7 +38,7 @@ Scott Brown; sbrown@bcgsc.ca
 
 3. **Parse the NetMHCpan output.**
 
-   **Script:** [parseNetMHCpanOutput_withCoord.py](parseNetMHCpanOutput_withCoord.py)
+   **Script:** [parseNetMHCpanOutput_withCoord.py](scripts/parseNetMHCpanOutput_withCoord.py)
 
    **Input:** peptideIDs.tsv from Step 1, analysis_results/ dir from Step 2.
 
@@ -52,7 +52,7 @@ Scott Brown; sbrown@bcgsc.ca
 
 4. **Connect the above data to expression data.**
 
-   **Script:** [getMutationExpression_enspIn3.py](getMutationExpression_enspIn3.py)
+   **Script:** [getMutationExpression_enspIn3.py](scripts/getMutationExpression_enspIn3.py)
 
    **Input:** List of all pMHCs produced in Step 3, EB++ PanCan RNASeqV2 Expression Matrix, ensp2entrez gene name conversion file
 
@@ -75,7 +75,7 @@ Scott Brown; sbrown@bcgsc.ca
 
 6. **Create sample-level summary.**
 
-   **Script:** [summarizeSampleLevelEpitopes.py](summarizeSampleLevelEpitopes.py)
+   **Script:** [summarizeSampleLevelEpitopes.py](scripts/summarizeSampleLevelEpitopes.py)
 
    **Input:** List of pMHCs with expression data from Step 4.
 
